@@ -25,6 +25,10 @@ goto banner
 start Social\doxbin.bat
 goto banner
 
+:github
+start Social\github.bat
+goto banner
+
 :banner
 cls
 chcp 65001 >nul
@@ -37,5 +41,6 @@ IF %root% == 3 goto Twitter
 IF %root% == 4 goto FaceBook
 IF %root% == 5 goto HackChat
 IF %root% == 6 goto DoxBin
+IF %root% == 7 goto github
 echo.
 goto banner
