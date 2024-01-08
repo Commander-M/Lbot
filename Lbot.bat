@@ -29,6 +29,14 @@ goto banner
 start Social\github.bat
 goto banner
 
+:twitch
+start Social\twitch.bat
+goto banner
+
+:spotify
+start Social\spotify.bat
+goto banner
+
 :banner
 cls
 chcp 65001 >nul
@@ -42,5 +50,7 @@ IF %root% == 4 goto FaceBook
 IF %root% == 5 goto HackChat
 IF %root% == 6 goto DoxBin
 IF %root% == 7 goto github
+IF %root% == 8 goto twitch
+IF %root% == 9 goto spotify
 echo.
 goto banner
